@@ -48,14 +48,14 @@ class Main(App):
             self.image.texture = texture
 
     def inference(self, *args):
-        pixelated_frame = self.pixelate_frame(self.image_frame, 3) #o predict é em cima do image_frame, mas podemos pixelizar ele para deixar o arquivo menor e diminuir o custo de envio em banda
-        results = model.predict(source=pixelated_frame, verbose=False, show = True) #com show=False temos apenas a tela do Kivy
-        #results = model.predict(source=self.image_frame, verbose=False, show=True) com show=True temos a tela com bounding boxes da yolo
+        pixelated_frame = self.pixelate_frame(self.image_frame, 3)
+        results = model.predict(source=pixelated_frame, verbose=False, show=True)
         preds_pixelate, classes_pixelated = results[0].boxes.conf.cpu().numpy(), results[0].boxes.cls.cpu().numpy()
         try:
             if int(classes_pixelated[0]) == 0:
-              if preds_pixelate[0] > 0.5:
-                People_count += 1
+                if preds_pixelate[0] > 0.5:
+                    People_count = len(results[0].boxes)  # Conta o número de caixas delimitadoras
+                    print(f'Pessoas encontradas: {People_count}')
         except:
             pass
 
