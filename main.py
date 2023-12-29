@@ -59,7 +59,7 @@ class InferenceResource(Resource):
     def send_mqtt_message(self, message):
         client = mqtt.Client()
         client.connect(mqtt_broker_address)
-        client.publish(mqtt_topic, message)
+        client.publish(mqtt_topic, "{\"value\": " + str(message) + "}")
         client.disconnect()
 
 api.add_resource(InferenceResource, '/inference')
