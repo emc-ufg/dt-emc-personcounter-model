@@ -8,10 +8,15 @@ from kivy.uix.image import Image
 from kivy.graphics.texture import Texture
 from kivy.clock import Clock
 from ultralytics import YOLO
+import paho.mqtt.client as mqtt
 
 app = Flask(__name__)
 api = Api(app)
 model = YOLO("gd.pt")
+
+# Configurações do MQTT
+mqtt_broker_address = "200.137.220.250"
+mqtt_topic = "CAE/S101/sensor/pessoas"
 
 class InferenceResource(Resource):
     def __init__(self):
@@ -35,6 +40,9 @@ class InferenceResource(Resource):
         people_count = len(results[0].boxes)
         print(f'Pessoas encontradas na inferência: {people_count}')
 
+        # Enviar resultado para o tópico MQTT
+        self.send_mqtt_message(people_count)
+
         return {'people_count': people_count}
 
     def convert_frame_to_texture(self, frame):
@@ -47,6 +55,12 @@ class InferenceResource(Resource):
         small_frame = cv2.resize(frame, None, fx=1 / block_size, fy=1 / block_size, interpolation=cv2.INTER_NEAREST)
         pixelated_frame = cv2.resize(small_frame, (frame.shape[1], frame.shape[0]), interpolation=cv2.INTER_NEAREST)
         return pixelated_frame
+
+    def send_mqtt_message(self, message):
+        client = mqtt.Client()
+        client.connect(mqtt_broker_address)
+        client.publish(mqtt_topic, message)
+        client.disconnect()
 
 api.add_resource(InferenceResource, '/inference')
 
