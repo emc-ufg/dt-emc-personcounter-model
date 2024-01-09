@@ -32,6 +32,17 @@ class InferenceResource(Resource):
         image_data = args['image'].split(',')[1]  # Remove o cabeçalho da string base64
         image_decoded = cv2.imdecode(np.frombuffer(base64.b64decode(image_data), np.uint8), cv2.IMREAD_COLOR)
 
+        # Generate a random number and character
+        random_number = np.random.randint(0, 10)
+        random_letter = chr(np.random.randint(97, 123))
+
+        # Concat the random number and letter to the image filename
+        image_filename = f"received_image_{random_number}_{random_letter}.png"
+
+        cv2.imwrite(image_filename, image_decoded)
+        print(f'Imagem salva como: {image_filename}')
+
+        self.inference_count += 1
         self.image_frame = image_decoded
 
         # Realizar uma única inferência
@@ -65,4 +76,4 @@ class InferenceResource(Resource):
 api.add_resource(InferenceResource, '/inference')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=8080)
