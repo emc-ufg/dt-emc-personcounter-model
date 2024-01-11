@@ -36,12 +36,6 @@ class InferenceResource(Resource):
         random_number = np.random.randint(0, 10)
         random_letter = chr(np.random.randint(97, 123))
 
-        # Concat the random number and letter to the image filename
-        image_filename = f"received_image_{random_number}_{random_letter}.png"
-
-        cv2.imwrite(image_filename, image_decoded)
-        print(f'Imagem salva como: {image_filename}')
-
         self.inference_count += 1
         self.image_frame = image_decoded
 
@@ -50,6 +44,12 @@ class InferenceResource(Resource):
         results = model.predict(source=pixelated_frame, verbose=False)
         people_count = len(results[0].boxes)
         print(f'Pessoas encontradas na inferência: {people_count}')
+
+        # Concat the random number and letter to the image filename
+        image_filename = f"received_image_({people_count})_{random_number}_{random_letter}.png"
+
+        cv2.imwrite(image_filename, image_decoded)
+        print(f'Imagem salva como: {image_filename}')
 
         # Enviar resultado para o tópico MQTT
         self.send_mqtt_message(people_count)
