@@ -45,12 +45,6 @@ class InferenceResource(Resource):
         people_count = len(results[0].boxes)
         print(f'Pessoas encontradas na inferência: {people_count}')
 
-        # Concat the random number and letter to the image filename
-        image_filename = f"received_image_({people_count})_{random_number}_{random_letter}.png"
-
-        cv2.imwrite(image_filename, image_decoded)
-        print(f'Imagem salva como: {image_filename}')
-
         # Enviar resultado para o tópico MQTT
         self.send_mqtt_message(people_count)
 
