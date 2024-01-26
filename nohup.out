@@ -1,0 +1,91 @@
+[[1;32mINFO[0m   ] [Logger      ] Record log in /home/proj_gemeos/.kivy/logs/kivy_24-01-26_4.txt
+[[1;32mINFO[0m   ] [Kivy        ] v2.3.0
+[[1;32mINFO[0m   ] [Kivy        ] Installed at "/home/proj_gemeos/.local/lib/python3.10/site-packages/kivy/__init__.py"
+[[1;32mINFO[0m   ] [Python      ] v3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+[[1;32mINFO[0m   ] [Python      ] Interpreter at "/usr/bin/python3"
+[[1;32mINFO[0m   ] [Logger      ] Purge log fired. Processing...
+[[1;32mINFO[0m   ] [Logger      ] Purge finished!
+[[1;32mINFO[0m   ] [Factory     ] 195 symbols loaded
+[[1;32mINFO[0m   ] [Image       ] Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+[[1;36mDEBUG[0m  ] [matplotlib data path] /home/proj_gemeos/.local/lib/python3.10/site-packages/matplotlib/mpl-data
+[[1;36mDEBUG[0m  ] CONFIGDIR=/home/proj_gemeos/.config/matplotlib
+[[1;36mDEBUG[0m  ] interactive is False
+[[1;36mDEBUG[0m  ] platform is linux
+[[1;36mDEBUG[0m  ] CACHEDIR=/home/proj_gemeos/.cache/matplotlib
+[[1;36mDEBUG[0m  ] Using fontManager instance from /home/proj_gemeos/.cache/matplotlib/fontlist-v330.json
+ * Serving Flask app 'main'
+ * Debug mode: on
+[[1;32mINFO[0m   ] [[31m[1mWARNING] This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://200.137.220.250:9999
+[[1;32mINFO[0m   ] [33mPress CTRL+C to quit[0m
+[[1;32mINFO[0m   ]  * Restarting with stat
+[[1;32mINFO[0m   ] [Logger      ] Record log in /home/proj_gemeos/.kivy/logs/kivy_24-01-26_5.txt
+[[1;32mINFO[0m   ] [Kivy        ] v2.3.0
+[[1;32mINFO[0m   ] [Kivy        ] Installed at "/home/proj_gemeos/.local/lib/python3.10/site-packages/kivy/__init__.py"
+[[1;32mINFO[0m   ] [Python      ] v3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+[[1;32mINFO[0m   ] [Python      ] Interpreter at "/usr/bin/python3"
+[[1;32mINFO[0m   ] [Logger      ] Purge log fired. Processing...
+[[1;32mINFO[0m   ] [Logger      ] Purge finished!
+[[1;32mINFO[0m   ] [Factory     ] 195 symbols loaded
+[[1;32mINFO[0m   ] [Image       ] Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+[[1;36mDEBUG[0m  ] [matplotlib data path] /home/proj_gemeos/.local/lib/python3.10/site-packages/matplotlib/mpl-data
+[[1;36mDEBUG[0m  ] CONFIGDIR=/home/proj_gemeos/.config/matplotlib
+[[1;36mDEBUG[0m  ] interactive is False
+[[1;36mDEBUG[0m  ] platform is linux
+[[1;36mDEBUG[0m  ] CACHEDIR=/home/proj_gemeos/.cache/matplotlib
+[[1;36mDEBUG[0m  ] Using fontManager instance from /home/proj_gemeos/.cache/matplotlib/fontlist-v330.json
+[[1;33mWARNING[0m]  * Debugger is active!
+[[1;32mINFO[0m   ] [ * Debugger PIN] 140-053-094
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+[[1;32mINFO[0m   ] [189.63.43.212 - - [26/Jan/2024 11]42:19] "POST /inference HTTP/1.1" 200 -
+[[1;32mINFO[0m   ] [189.63.43.212 - - [26/Jan/2024 11]52:41] "POST /inference HTTP/1.1" 200 -
+[[1;32mINFO[0m   ] [189.63.43.212 - - [26/Jan/2024 11]53:50] "POST /inference HTTP/1.1" 200 -
+[[1;32mINFO[0m   ] [189.63.43.212 - - [26/Jan/2024 11]54:31] "POST /inference HTTP/1.1" 200 -
+[[1;32mINFO[0m   ] [Logger      ] Record log in /home/proj_gemeos/.kivy/logs/kivy_24-01-26_6.txt
+[[1;32mINFO[0m   ] [Kivy        ] v2.3.0
+[[1;32mINFO[0m   ] [Kivy        ] Installed at "/home/proj_gemeos/.local/lib/python3.10/site-packages/kivy/__init__.py"
+[[1;32mINFO[0m   ] [Python      ] v3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+[[1;32mINFO[0m   ] [Python      ] Interpreter at "/usr/bin/python3"
+[[1;32mINFO[0m   ] [Logger      ] Purge log fired. Processing...
+[[1;32mINFO[0m   ] [Logger      ] Purge finished!
+[[1;32mINFO[0m   ] [Factory     ] 195 symbols loaded
+[[1;32mINFO[0m   ] [Image       ] Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+[[1;36mDEBUG[0m  ] [matplotlib data path] /home/proj_gemeos/.local/lib/python3.10/site-packages/matplotlib/mpl-data
+[[1;36mDEBUG[0m  ] CONFIGDIR=/home/proj_gemeos/.config/matplotlib
+[[1;36mDEBUG[0m  ] interactive is False
+[[1;36mDEBUG[0m  ] platform is linux
+[[1;36mDEBUG[0m  ] CACHEDIR=/home/proj_gemeos/.cache/matplotlib
+[[1;36mDEBUG[0m  ] Using fontManager instance from /home/proj_gemeos/.cache/matplotlib/fontlist-v330.json
+ * Serving Flask app 'main'
+ * Debug mode: on
+[[1;32mINFO[0m   ] [[31m[1mWARNING] This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://200.137.220.250:9999
+[[1;32mINFO[0m   ] [33mPress CTRL+C to quit[0m
+[[1;32mINFO[0m   ]  * Restarting with stat
+[[1;32mINFO[0m   ] [Logger      ] Record log in /home/proj_gemeos/.kivy/logs/kivy_24-01-26_7.txt
+[[1;32mINFO[0m   ] [Kivy        ] v2.3.0
+[[1;32mINFO[0m   ] [Kivy        ] Installed at "/home/proj_gemeos/.local/lib/python3.10/site-packages/kivy/__init__.py"
+[[1;32mINFO[0m   ] [Python      ] v3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+[[1;32mINFO[0m   ] [Python      ] Interpreter at "/usr/bin/python3"
+[[1;32mINFO[0m   ] [Logger      ] Purge log fired. Processing...
+[[1;32mINFO[0m   ] [Logger      ] Purge finished!
+[[1;32mINFO[0m   ] [Factory     ] 195 symbols loaded
+[[1;32mINFO[0m   ] [Image       ] Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+[[1;36mDEBUG[0m  ] [matplotlib data path] /home/proj_gemeos/.local/lib/python3.10/site-packages/matplotlib/mpl-data
+[[1;36mDEBUG[0m  ] CONFIGDIR=/home/proj_gemeos/.config/matplotlib
+[[1;36mDEBUG[0m  ] interactive is False
+[[1;36mDEBUG[0m  ] platform is linux
+[[1;36mDEBUG[0m  ] CACHEDIR=/home/proj_gemeos/.cache/matplotlib
+[[1;36mDEBUG[0m  ] Using fontManager instance from /home/proj_gemeos/.cache/matplotlib/fontlist-v330.json
+[[1;33mWARNING[0m]  * Debugger is active!
+[[1;32mINFO[0m   ] [ * Debugger PIN] 378-235-589
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+[[1;32mINFO[0m   ] [189.63.43.212 - - [26/Jan/2024 11]56:29] "POST /inference HTTP/1.1" 200 -
+[[1;32mINFO[0m   ] [189.63.43.212 - - [26/Jan/2024 11]57:35] "POST /inference HTTP/1.1" 200 -
+[[1;32mINFO[0m   ] [189.63.43.212 - - [26/Jan/2024 11]59:03] "POST /inference HTTP/1.1" 200 -
+[[1;32mINFO[0m   ] [189.63.43.212 - - [26/Jan/2024 12]00:09] "POST /inference HTTP/1.1" 200 -
+[[1;32mINFO[0m   ] [189.63.43.212 - - [26/Jan/2024 12]01:18] "POST /inference HTTP/1.1" 200 -
