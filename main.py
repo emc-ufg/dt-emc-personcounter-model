@@ -15,7 +15,7 @@ api = Api(app)
 model = YOLO("gd.pt")
 
 # Configurações do MQTT
-mqtt_broker_address = "200.137.220.250"
+mqtt_broker_address = "200.137.220.39"
 mqtt_topic = "CAE/S101/sensor/pessoas"
 
 class InferenceResource(Resource):
